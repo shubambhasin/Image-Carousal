@@ -37,6 +37,13 @@ const Slider = ({ slides }) => {
           );
         })}
       </div>
+
+      <footer>
+        By{" "}
+        <strong>
+          <a href="https://github.com/shubambhasin">Shubam Bhasin</a>
+        </strong>
+      </footer>
     </div>
   );
 };
