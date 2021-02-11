@@ -1,0 +1,61 @@
+.App {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.slider-container
+{
+
+  position: relative;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+
+.prev
+{
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  left: 30px;
+  user-select: none;
+  z-index: 20;
+}
+.next
+{
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  right: 30px;
+  user-select: none;
+  z-index: 20;
+}
+
+.carousal
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide-image
+{
+
+  width: 800px;
+  height: 500px;
+
+}
+.slide
+{
+  opacity: 0.4;
+  transition: 1s ease;
+
+}
+.slide.active
+{
+  opacity: 1;
+  transition: 1s ease;
+  transform: scale(1.05)
+}
